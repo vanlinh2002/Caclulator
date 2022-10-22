@@ -34,7 +34,8 @@
             this.txtA = new System.Windows.Forms.TextBox();
             this.txtB = new System.Windows.Forms.TextBox();
             this.txtKQ = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnCong = new System.Windows.Forms.Button();
+            this.btnTru = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -88,23 +89,35 @@
             this.txtKQ.Size = new System.Drawing.Size(231, 20);
             this.txtKQ.TabIndex = 1;
             // 
-            // button1
+            // btnCong
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(318, 268);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 42);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Cộng";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnCong.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCong.Location = new System.Drawing.Point(318, 268);
+            this.btnCong.Name = "btnCong";
+            this.btnCong.Size = new System.Drawing.Size(101, 42);
+            this.btnCong.TabIndex = 2;
+            this.btnCong.Text = "Cộng";
+            this.btnCong.UseVisualStyleBackColor = true;
+            this.btnCong.Click += new System.EventHandler(this.btnCong_Click);
+            // 
+            // btnTru
+            // 
+            this.btnTru.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTru.Location = new System.Drawing.Point(188, 268);
+            this.btnTru.Name = "btnTru";
+            this.btnTru.Size = new System.Drawing.Size(99, 42);
+            this.btnTru.TabIndex = 3;
+            this.btnTru.Text = "Trừ";
+            this.btnTru.UseVisualStyleBackColor = true;
+            this.btnTru.Click += new System.EventHandler(this.btnTru_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(666, 425);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnTru);
+            this.Controls.Add(this.btnCong);
             this.Controls.Add(this.txtKQ);
             this.Controls.Add(this.txtB);
             this.Controls.Add(this.txtA);
@@ -126,7 +139,8 @@
         private System.Windows.Forms.TextBox txtA;
         private System.Windows.Forms.TextBox txtB;
         private System.Windows.Forms.TextBox txtKQ;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCong;
+        private System.Windows.Forms.Button btnTru;
     }
 }
 
